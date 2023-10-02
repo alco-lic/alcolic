@@ -14,7 +14,7 @@ const Login: React.FC = () => {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
+    console.log("user : " + username, "pw : " + password);
     // 서버에 로그인 요청 보내기
     // 예: axios.post('/api/login', { username, password })
     // 성공적으로 로그인한 경우 홈페이지로 이동
