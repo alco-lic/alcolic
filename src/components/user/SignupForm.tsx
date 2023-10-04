@@ -14,7 +14,7 @@ const Signup: React.FC = () => {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
+    console.log("id : " + username,"pw : " + password);
     // 서버에 회원가입 요청 보내기
     // 예: axios.post('/api/signup', { username, password })
     // 성공적으로 회원가입한 경우 로그인 페이지로 이동
